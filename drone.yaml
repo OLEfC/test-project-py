@@ -1,0 +1,17 @@
+ind: pipeline
+type: docker
+name: run_numpy
+
+steps:
+  - name: install numpy
+    image: python
+    commands: 
+    - pip install -r requrements.txt
+  - name: run_app
+    image: python
+    commands: 
+    - python3 main.py
+
+  - triger:
+    - event: 
+    - push
