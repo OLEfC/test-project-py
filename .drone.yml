@@ -6,12 +6,13 @@ steps:
   - name: install numpy
     image: python:3.11.14-slim-bookworm
     commands: 
-    - pip install -r requirements.txt
+      - pip install -r requirements.txt
   - name: run_app
     image: python:3.11.14-slim-bookworm
     commands: 
-    - python3 main.py
+      - python3 main.py
 
   - trigger:
     event: 
       - push
+
