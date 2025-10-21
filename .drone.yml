@@ -13,5 +13,5 @@ steps:
     - python3 main.py
 
   - trigger:
-    - event: 
+    event: 
     - push
